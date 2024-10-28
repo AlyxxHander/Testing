@@ -58,4 +58,13 @@ public class WordCounter implements WordCounterInterface {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
     }
+
+    public int getTotalWordCount(Map<String, Integer> wordCountMap) {
+        int totalCount = 0;
+        for(int count : wordCountMap.values()) {
+            totalCount += count;
+        }
+
+        return totalCount;
+    }
 }

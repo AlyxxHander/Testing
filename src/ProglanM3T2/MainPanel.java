@@ -24,7 +24,7 @@ public class MainPanel {
 
         Map<String, Integer> wordCountMap = wordCounter.countWords(text);
         wordCounter.displayWordCount(wordCountMap);
-        // System.out.println("Jumlah Kata: " + wordCounter.getTotalWordCount(wordCountMap));
+        System.out.println("Jumlah Kata: " + wordCounter.getTotalWordCount(wordCountMap));
 
         scanner.close();
     }
